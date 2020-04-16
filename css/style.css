@@ -8,10 +8,12 @@ a{
   text-decoration: none;
   color: white;
 }
+
 /* Impostazione sfondo */
 body{
   background-image: url(../img/background.png);
 }
+
 /* Impostazione conteiner generale */
 .conteiner{
   padding: 20px 10px;
@@ -19,6 +21,7 @@ body{
   width: 90%;
   margin: 0 auto;
 }
+
 /* Impostazione header */
 header{
   background: white;
@@ -72,7 +75,6 @@ nav.menu{
   height: 50px;
   background: #504741;
   border-radius: 1px;
-  position: relative;
 }
 nav a{
   color: lightgray;
@@ -85,6 +87,7 @@ nav.menu ul{
 }
 nav.menu ul li{
   float: left;
+  display: block;
   line-height: 50px;
   font-size: 11px;
   padding: 0px 8px;
@@ -94,21 +97,6 @@ nav.menu ul li.corrente{
   background: #302B27;
   color: white;
 }
-/* Impostazione menu nascosto */
-/* nav.menu ul ul{
-  margin-left: -6.4px;
-  display: none;
-  position: relative;
-}
-nav.menu ul li ul li{
-  position: relative;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  text-align: left;
-  border-bottom: 1px solid black;
-  background: #504741;
-} */
 
 /* Impostazione menu al passaggio mouse */
 nav.menu ul li:hover{
@@ -127,13 +115,8 @@ nav.menu ul li:nth-child(3){
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-/* Impostazione menu sotto al passaggio mouse */
-/* nav ul li:hover ul{
-  width: 100%;
-  display: block;
-} */
 
-/* Impostazione main generale*/
+/* Impostazione main generale */
 
 /* Main sinistro */
 main .col_left{
@@ -167,6 +150,7 @@ main .col_left .pages p:hover{
   background-color: lightgray;
   border-top: 1px solid gray;
 }
+
 /* Main centrale */
 main .col_center{
   background: white;
@@ -176,6 +160,7 @@ main .col_center{
   border-radius: 2px;
   margin-top: 1%;
 }
+
 /* Impostazione articolo superiore */
 main .col_center .articolo_top{
   padding: 20px;
@@ -188,7 +173,7 @@ main .col_center .articolo_top p{
   font-size: 14px;
   margin: 5px 0;
 }
-main .col_center .articolo_top .green{
+main .col_center .articolo_top .green a{
   color: lightgreen;
 }
 /* Impostazione immagine articolo */
@@ -203,7 +188,9 @@ main .col_center .articolo_bottom{
   font-family: sans-serif;
   font-size: 13px;
 }
+
 /* Main destro */
+
 /* Impostazione right top */
 main .col_right {
   margin-top: 1%;
@@ -224,6 +211,7 @@ main .col_right .top::after{
   display: table;
   clear: both;
 }
+
 /* Impostazione font */
 main .col_right .top .cerca{
   width: 70%;
@@ -270,6 +258,7 @@ main::after{
   display: table;
   clear: both;
 }
+
 /* Impostazione footer */
 footer{
   border-radius: 2px;
