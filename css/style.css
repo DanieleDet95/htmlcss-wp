@@ -1,0 +1,307 @@
+/* Impostazione reset generale */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+/* Impostazione sfondo */
+body{
+  background-image: url(../img/background.png);
+}
+/* Impostazione conteiner generale */
+.conteiner{
+  padding: 20px 10px;
+  padding-bottom: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+/* Impostazione header */
+header{
+  background: white;
+  width: 100%;
+  height: 250px;
+  border-radius: 1px;
+}
+
+/* Impostazione sfondo */
+header .sfondo{
+  background-image: url(../img/sfondo_header.jpg);
+  background-position: center;
+  background-size: 97% 180px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+/* Impostazione titolo e sottotitolo */
+header .sfondo .titolo{
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+header .sfondo h1{
+  font-size: 40px;
+  font-weight: 1000;
+  margin: 10px;
+}
+header .sfondo p{
+  font-size: 17px;
+  font-weight: 50;
+  letter-spacing: 3px;
+}
+.centrare{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Impostazione menu */
+nav.menu{
+  height: 50px;
+  background: #504741;
+  border-radius: 1px;
+  position: relative;
+}
+nav a{
+  color: lightgray;
+}
+nav.menu ul{
+  width: 330px;
+  margin: auto;
+  list-style: none;
+  text-align: center;
+}
+nav.menu ul li{
+  float: left;
+  line-height: 50px;
+  font-size: 11px;
+  padding: 0px 8px;
+}
+nav.menu ul li.corrente{
+  letter-spacing: 1px;
+  background: #302B27;
+  color: white;
+}
+/* Impostazione menu nascosto */
+/* nav.menu ul ul{
+  margin-left: -6.4px;
+  display: none;
+  position: relative;
+}
+nav.menu ul li ul li{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  background: #504741;
+} */
+
+/* Impostazione menu al passaggio mouse */
+nav.menu ul li:hover{
+  background: #302B27;
+}
+nav.menu ul li:hover a{
+  color: white;
+}
+nav.menu ul li:first-child{
+  border-right: 1px solid black;
+}
+nav.menu ul li:last-child{
+  border-left: 1px solid black;
+}
+nav.menu ul li:nth-child(3){
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+/* Impostazione menu sotto al passaggio mouse */
+/* nav ul li:hover ul{
+  width: 100%;
+  display: block;
+} */
+
+/* Impostazione main generale*/
+
+/* Main sinistro */
+main .col_left{
+  margin-top: 1%;
+  width: 23.5%;
+  float: left;
+}
+main .col_left .top,
+main .col_left .center,
+main .col_left .bottom{
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 2px;
+}
+main .col_left .pages{
+  padding: 20px;
+}
+main .col_left .pages a{
+  text-decoration: none;
+  color: #669900;
+}
+main .col_left .pages p{
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 5px;
+}
+/* Impostazione link overmouse */
+main .col_left .pages p:hover{
+  border-radius: 2px;
+  text-decoration: underline;
+  background-color: lightgray;
+  border-top: 1px solid gray;
+}
+/* Main centrale */
+main .col_center{
+  background: white;
+  width: 50%;
+  margin: 0px 1.5%;
+  float: left;
+  border-radius: 2px;
+  margin-top: 1%;
+}
+/* Impostazione articolo superiore */
+main .col_center .articolo_top{
+  padding: 20px;
+}
+main .col_center .articolo_top h2{
+  font-size: 28px;
+  text-shadow: 2px 2px lightgray;
+}
+main .col_center .articolo_top p{
+  font-size: 14px;
+  margin: 5px 0;
+}
+main .col_center .articolo_top .green{
+  color: lightgreen;
+}
+/* Impostazione immagine articolo */
+main .col_center img{
+  width: 100%;
+}
+
+/* Impostazione articolo inferiore */
+main .col_center .articolo_bottom{
+  padding:20px;
+  line-height: 20px;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+/* Main destro */
+/* Impostazione right top */
+main .col_right {
+  margin-top: 1%;
+  width: 23.5%;
+  float: left;
+  border-radius: 2px;
+}
+main .col_right .top{
+  background: white;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+main .col_right .top::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+/* Impostazione font */
+main .col_right .top .cerca{
+  width: 70%;
+  padding: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border: 1px solid lightgray;
+}
+main .col_right .top .button{
+  background: #504741;
+  color: white;
+  border-style: none;
+  width: 30px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Impostazione right bottom */
+main .col_right .bottom{
+  background: white;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  padding: 20px;
+}
+main .col_right .bottom h3{
+  margin-bottom: 10px;
+}
+main .col_right .bottom a{
+  text-decoration: none;
+  color: lightgreen;
+  font-size: 12px;
+}
+main .col_right .bottom span.big a{
+  font-size: 18px;
+}
+main .col_right .bottom a:hover{
+  text-decoration: underline;
+}
+
+/* Impostazione clearfix main */
+main::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+/* Impostazione footer */
+footer{
+  border-radius: 2px;
+  background: white;
+  width: 100%;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+}
+footer a{
+  text-decoration: none;
+  color: lightgray;
+  margin: 0 3px;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: black;
+}
+footer .icone i{
+  display: inline-block;
+  background: lightgray;
+  color: gray;
+  border-radius: 50%;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 15px 5px;
+  border: 1px solid white;
+}
+footer .icone i:hover{
+  background: white;
+  color: black;
+  border: 1px solid gray;
+}
